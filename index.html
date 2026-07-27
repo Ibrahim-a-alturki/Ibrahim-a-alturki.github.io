@@ -4,9 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ibrahim Alturki | Portfolio</title>
+
+<!-- Open Graph / WhatsApp & Social Media Preview -->
+<meta property="og:title" content="Ibrahim Alturki | MIS Graduate & BI Analyst">
+<meta property="og:description" content="Portfolio of Ibrahim Alturki — Specializing in SQL, Database Design, Power BI, and Oracle APEX.">
+<meta property="og:image" content="https://ibrahim-a-alturki.github.io/PP.jpeg">
+<meta property="og:url" content="https://ibrahim-a-alturki.github.io">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="PP.jpeg" type="image/jpeg">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root{
     --ink:#0A0F1A;
@@ -23,7 +35,6 @@
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
-
   html{scroll-behavior:smooth;}
 
   body{
@@ -37,7 +48,7 @@
     overflow-x:hidden;
   }
 
-  /* Custom Scrollbar for a premium feel */
+  /* Custom Scrollbar */
   ::-webkit-scrollbar { width: 8px; }
   ::-webkit-scrollbar-track { background: var(--ink); }
   ::-webkit-scrollbar-thumb { background: rgba(94,234,212,0.2); border-radius: 4px; }
@@ -52,24 +63,24 @@
     mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, black 0%, transparent 80%);
   }
 
-  .wrap{max-width:1040px; margin:0 auto; padding:0 28px; position:relative; z-index:1;}
+  .wrap{max-width:1040px; margin:0 auto; padding:0 24px; position:relative; z-index:1;}
 
   /* ---------- NAV ---------- */
   nav{
     display:flex; align-items:center; justify-content:space-between;
-    padding:32px 0;
+    padding:24px 0;
   }
   .brand{
     font-family:'IBM Plex Mono', monospace;
     font-size:15px; color:var(--text-dim); letter-spacing:0.02em;
   }
   .brand b{color:var(--text); font-weight:600;}
-  .navlinks{display:flex; gap:28px; font-family:'IBM Plex Mono', monospace; font-size:13px;}
+  .navlinks{display:flex; gap:20px; font-family:'IBM Plex Mono', monospace; font-size:13.5px;}
   .navlinks a{color:var(--text-dim); text-decoration:none; transition:color .3s ease;}
   .navlinks a:hover{color:var(--teal); text-shadow: 0 0 10px rgba(94,234,212,0.3);}
 
   /* ---------- HERO ---------- */
-  .hero{padding:48px 0 80px; position:relative;}
+  .hero{padding:32px 0 48px; position:relative;}
 
   .schema-field{
     position:absolute; top:-20px; right:-60px; width:440px; height:440px;
@@ -85,13 +96,13 @@
   .hero-header {
     display: flex;
     align-items: center;
-    gap: 32px;
-    margin-bottom: 28px;
+    gap: 24px;
+    margin-bottom: 24px;
   }
 
   .profile-img {
-    width: 104px;
-    height: 104px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--teal);
@@ -107,14 +118,14 @@
 
   .status-badge{
     display:inline-flex; align-items:center; gap:8px;
-    font-family:'IBM Plex Mono', monospace; font-size:13px;
+    font-family:'IBM Plex Mono', monospace; font-size:12.5px;
     color:var(--teal); background:rgba(94,234,212,0.08);
-    border:1px solid var(--line); padding:6px 14px; border-radius:20px;
-    margin-bottom:12px;
+    border:1px solid var(--line); padding:5px 12px; border-radius:20px;
+    margin-bottom:10px;
     backdrop-filter: blur(4px);
   }
   .status-dot{
-    width:8px; height:8px; background:var(--teal); border-radius:50%;
+    width:7px; height:7px; background:var(--teal); border-radius:50%;
     box-shadow:0 0 10px var(--teal); animation: pulse 2s infinite;
   }
   @keyframes pulse {
@@ -125,34 +136,30 @@
   h1.name{
     font-family:'Space Grotesk', sans-serif;
     font-weight:700;
-    font-size:clamp(32px, 5.5vw, 54px);
+    font-size:clamp(30px, 5.5vw, 52px);
     line-height:1.1;
     letter-spacing:-0.02em;
     background: linear-gradient(180deg, #FFFFFF 0%, #C3CBD9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    white-space: nowrap;
   }
   
   @media (max-width: 600px) {
     .hero-header {
       flex-direction: column;
       align-items: flex-start;
-      gap: 20px;
-    }
-    h1.name {
-      white-space: normal;
+      gap: 16px;
     }
   }
 
-  .tags{display:flex; flex-wrap:wrap; gap:10px; margin-bottom:32px; max-width:820px;}
+  .tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px; max-width:820px;}
   .tag{
     font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
+    font-size:12px;
     color:var(--text);
     border:1px solid var(--line);
     background:rgba(94,234,212,0.04);
-    padding:8px 14px;
+    padding:6px 12px;
     border-radius:6px;
     letter-spacing:0.01em;
     backdrop-filter: blur(4px);
@@ -162,28 +169,26 @@
   .tag:hover{ 
     border-color:var(--teal); 
     background:rgba(94,234,212,0.1); 
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(94,234,212,0.15);
+    transform: translateY(-2px);
   }
-  .tag::before{content:"◆ "; color:var(--teal); font-size:10px; transition: text-shadow 0.3s;}
-  .tag:hover::before{ text-shadow: 0 0 8px var(--teal); }
+  .tag::before{content:"◆ "; color:var(--teal); font-size:9px;}
 
   .bio{
     max-width:680px;
     color:var(--text-dim);
-    font-size:16.5px;
-    line-height:1.75;
-    margin-bottom:40px;
+    font-size:15.5px;
+    line-height:1.7;
+    margin-bottom:32px;
   }
   .bio b{color:var(--text); font-weight:600;}
 
-  .cta-row{display:flex; flex-wrap:wrap; gap:16px; margin-bottom:40px;}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:32px;}
 
   .btn{
     font-family:'IBM Plex Mono', monospace;
-    font-size:14px;
+    font-size:13.5px;
     font-weight:500;
-    padding:14px 28px;
+    padding:12px 22px;
     border-radius:8px;
     text-decoration:none;
     display:inline-flex; align-items:center; gap:8px;
@@ -196,8 +201,8 @@
     font-weight:600;
   }
   .btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 12px 28px rgba(242,184,75,0.25);
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(242,184,75,0.25);
     background:#f5c366;
   }
   .btn-outline{
@@ -209,14 +214,13 @@
   .btn-outline:hover{
     border-color:var(--teal);
     color:var(--teal);
-    transform:translateY(-3px);
+    transform:translateY(-2px);
     background:rgba(94,234,212,0.08);
-    box-shadow:0 12px 28px rgba(94,234,212,0.1);
   }
 
-  .social-row{display:flex; gap:14px;}
+  .social-row{display:flex; gap:12px;}
   .social{
-    width:46px; height:46px; border-radius:50%;
+    width:42px; height:42px; border-radius:50%;
     border:1px solid rgba(231,236,243,0.15);
     background:rgba(255,255,255,0.02);
     display:flex; align-items:center; justify-content:center;
@@ -227,104 +231,88 @@
   .social:hover{
     border-color:var(--teal);
     color:var(--teal);
-    transform:translateY(-4px) scale(1.05);
-    box-shadow:0 0 20px var(--teal-glow);
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:0 0 16px var(--teal-glow);
   }
-  .social svg{width:18px; height:18px;}
+  .social svg{width:17px; height:17px;}
 
-  /* ---------- SECTION LABEL ---------- */
+  /* ---------- SECTION HEADINGS ---------- */
   .section-label{
     font-family:'IBM Plex Mono', monospace;
-    font-size:12.5px;
+    font-size:12px;
     color:var(--teal);
     letter-spacing:0.14em;
     text-transform:uppercase;
     display:flex; align-items:center; gap:12px;
-    margin-bottom:14px;
+    margin-bottom:12px;
   }
   .section-label::after{content:""; flex:1; height:1px; background:var(--line-dim);}
 
-  section{padding:56px 0;}
+  section{padding:40px 0;}
   section h2{
     font-family:'Space Grotesk', sans-serif;
-    font-size:clamp(28px,4vw,36px);
+    font-size:clamp(24px,4vw,32px);
     font-weight:600;
-    margin-bottom:40px;
+    margin-bottom:28px;
   }
 
   /* ---------- PROJECT CARDS ---------- */
-  .projects{display:flex; flex-direction:column; gap:28px;}
+  .projects{display:flex; flex-direction:column; gap:24px;}
 
   .card{
     border:1px solid var(--line-dim);
     background:linear-gradient(145deg, rgba(16, 24, 39, 0.8), rgba(20, 30, 48, 0.8));
     backdrop-filter: blur(10px);
     border-radius:var(--radius);
-    padding:36px;
+    padding:28px;
     position:relative;
     transition:all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;
   }
-  .card::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(94,234,212,0.3), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
   .card:hover{
     border-color:var(--line);
-    transform:translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0,0,0,0.4), 0 0 25px rgba(94,234,212,0.1);
+    transform:translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.4), 0 0 20px rgba(94,234,212,0.08);
   }
-  .card:hover::before { opacity: 1; }
 
-  .card-top{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:16px;}
-  .card-title{
-    font-family:'Space Grotesk', sans-serif;
-    font-size:24px; font-weight:600;
-  }
+  .card-top{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:14px;}
+  .card-title{font-family:'Space Grotesk', sans-serif; font-size:22px; font-weight:600;}
   .card-title a{color:var(--text); text-decoration:none; transition:all .2s;}
-  .card-title a:hover{color:var(--teal); text-shadow: 0 0 10px rgba(94,234,212,0.3);}
+  .card-title a:hover{color:var(--teal);}
 
   .card-index{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-dim);}
-
-  .card p{color:var(--text-dim); font-size:15.5px; margin-bottom:24px; max-width:720px; line-height:1.7;}
+  .card p{color:var(--text-dim); font-size:15px; margin-bottom:20px; max-width:720px; line-height:1.65;}
   .card p b{color:var(--text); font-weight:600;}
 
-  .stack{display:flex; flex-wrap:wrap; gap:10px;}
+  .stack{display:flex; flex-wrap:wrap; gap:8px;}
   .stack span{
     font-family:'IBM Plex Mono', monospace;
-    font-size:11.5px;
+    font-size:11px;
     color:var(--teal);
     background:rgba(94,234,212,0.05);
     border:1px solid var(--line-dim);
-    padding:6px 14px;
+    padding:5px 12px;
     border-radius:6px;
-    transition: background 0.2s, border-color 0.2s;
   }
-  .card:hover .stack span { border-color: rgba(94,234,212,0.2); }
 
   .card-link{
-    margin-top:24px;
+    margin-top:20px;
     display:inline-flex; align-items:center; gap:6px;
     font-family:'IBM Plex Mono', monospace;
     font-size:13px;
     color:var(--teal);
     text-decoration:none;
-    transition:all .2s ease;
   }
-  .card-link:hover{gap:12px; text-decoration:underline; text-shadow: 0 0 8px rgba(94,234,212,0.4);}
+  .card-link:hover{gap:10px; text-decoration:underline;}
 
   /* ---------- FOOTER ---------- */
-  footer{padding:64px 0 48px;}
+  footer{padding:48px 0 36px;}
   .footer-inner{
     border-top:1px solid var(--line-dim);
-    padding-top:32px;
-    display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:20px;
+    padding-top:28px;
+    display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;
   }
-  .footer-text{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--text-dim);}
+  .footer-text{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--text-dim);}
   .footer-text .teal{color:var(--teal);}
 
   ::selection{background:var(--teal); color:#04140f;}
@@ -349,31 +337,13 @@
       <line x1="200" y1="140" x2="340" y2="90" stroke="#5EEAD4" stroke-opacity="0.25" stroke-width="1"/>
       <line x1="200" y1="140" x2="230" y2="270" stroke="#5EEAD4" stroke-opacity="0.25" stroke-width="1"/>
       <line x1="230" y1="270" x2="110" y2="330" stroke="#5EEAD4" stroke-opacity="0.18" stroke-width="1"/>
-
       <g>
         <rect x="30" y="46" width="64" height="44" rx="4" stroke="#F2B84B" stroke-opacity="0.55" fill="rgba(242,184,75,0.05)"/>
         <line x1="38" y1="62" x2="86" y2="62" stroke="#F2B84B" stroke-opacity="0.35"/>
-        <line x1="38" y1="74" x2="76" y2="74" stroke="#F2B84B" stroke-opacity="0.25"/>
       </g>
       <g>
         <rect x="168" y="112" width="70" height="50" rx="4" stroke="#5EEAD4" stroke-opacity="0.6" fill="rgba(94,234,212,0.06)"/>
         <line x1="176" y1="130" x2="230" y2="130" stroke="#5EEAD4" stroke-opacity="0.4"/>
-        <line x1="176" y1="142" x2="214" y2="142" stroke="#5EEAD4" stroke-opacity="0.28"/>
-        <line x1="176" y1="153" x2="222" y2="153" stroke="#5EEAD4" stroke-opacity="0.2"/>
-      </g>
-      <g>
-        <rect x="308" y="64" width="60" height="44" rx="4" stroke="#5EEAD4" stroke-opacity="0.4" fill="rgba(94,234,212,0.04)"/>
-        <line x1="316" y1="80" x2="360" y2="80" stroke="#5EEAD4" stroke-opacity="0.3"/>
-        <line x1="316" y1="92" x2="348" y2="92" stroke="#5EEAD4" stroke-opacity="0.2"/>
-      </g>
-      <g>
-        <rect x="198" y="246" width="66" height="46" rx="4" stroke="#F2B84B" stroke-opacity="0.4" fill="rgba(242,184,75,0.04)"/>
-        <line x1="206" y1="262" x2="252" y2="262" stroke="#F2B84B" stroke-opacity="0.3"/>
-        <line x1="206" y1="274" x2="240" y2="274" stroke="#F2B84B" stroke-opacity="0.2"/>
-      </g>
-      <g>
-        <rect x="82" y="306" width="58" height="42" rx="4" stroke="#5EEAD4" stroke-opacity="0.3" fill="rgba(94,234,212,0.03)"/>
-        <line x1="90" y1="321" x2="130" y2="321" stroke="#5EEAD4" stroke-opacity="0.22"/>
       </g>
     </svg>
 
@@ -404,7 +374,8 @@
 
     <div class="cta-row">
       <a href="#projects" class="btn btn-primary">View Projects ↓</a>
-      <a href="https://www.linkedin.com/in/ibrahim-a-alturki" target="_blank" class="btn btn-outline">Let's Connect</a>
+      <a href="CV.pdf" target="_blank" class="btn btn-outline">📄 Download CV</a>
+      <a href="https://www.linkedin.com/in/ibrahim-a-alturki" target="_blank" class="btn btn-outline">LinkedIn</a>
     </div>
 
     <div class="social-row">
@@ -420,6 +391,7 @@
     </div>
   </section>
 
+  <!-- ---------- PROJECTS SECTION ---------- -->
   <section id="projects">
     <div class="section-label">Projects</div>
     <h2>Selected work</h2>
