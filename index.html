@@ -116,19 +116,12 @@
     box-shadow: 0 0 35px rgba(94,234,212,0.4);
   }
 
-  .badge-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-
   .status-badge{
     display:inline-flex; align-items:center; gap:8px;
     font-family:'IBM Plex Mono', monospace; font-size:12.5px;
     color:var(--teal); background:rgba(94,234,212,0.08);
     border:1px solid var(--line); padding:5px 12px; border-radius:20px;
+    margin-bottom:10px;
     backdrop-filter: blur(4px);
   }
   .status-dot{
@@ -140,10 +133,17 @@
     50% { opacity: 0.5; transform: scale(0.85); }
   }
 
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
   h1.name{
     font-family:'Space Grotesk', sans-serif;
     font-weight:700;
-    font-size:clamp(30px, 5.5vw, 52px);
+    font-size:clamp(28px, 5vw, 48px);
     line-height:1.1;
     letter-spacing:-0.02em;
     background: linear-gradient(180deg, #FFFFFF 0%, #C3CBD9 100%);
@@ -152,9 +152,9 @@
   }
 
   .btn-cv-header {
-    padding: 5px 12px;
-    font-size: 12px;
-    border-radius: 20px;
+    padding: 7px 15px;
+    font-size: 12.5px;
+    margin-top: 2px;
   }
   
   @media (max-width: 600px) {
@@ -363,14 +363,14 @@
     <div class="hero-header">
       <img src="PP.jpeg" alt="Ibrahim Alturki" class="profile-img">
       <div>
-        <div class="badge-row">
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            <span>Riyadh, Saudi Arabia</span>
-          </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>Riyadh, Saudi Arabia</span>
+        </div>
+        <div class="name-row">
+          <h1 class="name">Ibrahim Alturki</h1>
           <a href="CV.pdf" target="_blank" class="btn btn-outline btn-cv-header">📄 Download CV</a>
         </div>
-        <h1 class="name">Ibrahim Alturki</h1>
       </div>
     </div>
 
