@@ -133,15 +133,28 @@
     50% { opacity: 0.5; transform: scale(0.85); }
   }
 
+  .name-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
   h1.name{
     font-family:'Space Grotesk', sans-serif;
     font-weight:700;
-    font-size:clamp(30px, 5.5vw, 52px);
+    font-size:clamp(28px, 5vw, 48px);
     line-height:1.1;
     letter-spacing:-0.02em;
     background: linear-gradient(180deg, #FFFFFF 0%, #C3CBD9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .btn-cv-header {
+    padding: 7px 15px;
+    font-size: 12.5px;
+    margin-top: 2px;
   }
   
   @media (max-width: 600px) {
@@ -354,7 +367,10 @@
           <span class="status-dot"></span>
           <span>Riyadh, Saudi Arabia</span>
         </div>
-        <h1 class="name">Ibrahim Alturki</h1>
+        <div class="name-row">
+          <h1 class="name">Ibrahim Alturki</h1>
+          <a href="CV.pdf" target="_blank" class="btn btn-outline btn-cv-header">📄 Download CV</a>
+        </div>
       </div>
     </div>
 
@@ -374,8 +390,7 @@
 
     <div class="cta-row">
       <a href="#projects" class="btn btn-primary">View Projects ↓</a>
-      <a href="CV.pdf" target="_blank" class="btn btn-outline">📄 Download CV</a>
-      <a href="https://www.linkedin.com/in/ibrahim-a-alturki" target="_blank" class="btn btn-outline">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ibrahim-a-alturki" target="_blank" class="btn btn-outline">Let's Connect →</a>
     </div>
 
     <div class="social-row">
