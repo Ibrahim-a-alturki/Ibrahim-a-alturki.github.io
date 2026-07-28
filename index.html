@@ -143,12 +143,22 @@
   h1.name{
     font-family:'Space Grotesk', sans-serif;
     font-weight:700;
-    font-size:clamp(28px, 5vw, 48px);
+    font-size:clamp(26px, 4.8vw, 46px);
     line-height:1.1;
     letter-spacing:-0.02em;
     background: linear-gradient(180deg, #FFFFFF 0%, #C3CBD9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .name .tagline {
+    font-weight: 400;
+    font-size: 0.55em;
+    color: var(--text-dim);
+    -webkit-text-fill-color: var(--text-dim);
+    letter-spacing: 0;
+    vertical-align: middle;
+    margin-left: 6px;
   }
 
   .btn-cv-header {
@@ -368,7 +378,7 @@
           <span>Riyadh, Saudi Arabia</span>
         </div>
         <div class="name-row">
-          <h1 class="name">Ibrahim Alturki</h1>
+          <h1 class="name">Ibrahim Alturki <span class="tagline">| Data &amp; BI</span></h1>
           <a href="CV.pdf" target="_blank" class="btn btn-outline btn-cv-header">📄 Download CV</a>
         </div>
       </div>
@@ -376,9 +386,7 @@
 
     <div class="tags">
       <span class="tag">MIS Graduate</span>
-      <span class="tag">Business Intelligence Analyst</span>
       <span class="tag">Data Analyst</span>
-      <span class="tag">Business Analyst</span>
       <span class="tag">SQL &amp; Database Specialist</span>
     </div>
 
