@@ -91,7 +91,17 @@
     0% { transform: translateY(0px) rotate(0deg); }
     100% { transform: translateY(-14px) rotate(1deg); }
   }
-  @media (max-width:880px){ .schema-field{display:none;} }
+
+  /* Responsive layout for iPhone and Mobile Screens */
+  @media (max-width:880px){ 
+    .schema-field{
+      width: 320px;
+      height: 320px;
+      top: -10px;
+      right: -60px;
+      opacity: 0.4; /* خفض الشفافية بالجوال لعدم التأثير على النص */
+    } 
+  }
 
   .hero-header {
     display: flex;
